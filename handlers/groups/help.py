@@ -20,8 +20,6 @@ async def user_bot_help(message: types.Message):
             '/ping - Тест бота',
             '/report - Пожаловаться на мудака',
             '/pics - Получить картинку',
-            '/boobs - Получить картинку',
-            '/tits - Получить картинку',
         ]
         await message.reply('\n'.join(text))
     else:
