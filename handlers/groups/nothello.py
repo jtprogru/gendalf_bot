@@ -5,11 +5,13 @@ from loader import dp
 
 @dp.message_handler(Text(equals="привет", ignore_case=True))
 @dp.message_handler(Text(equals="привет!", ignore_case=True))
+@dp.message_handler(Text(equals="привет.", ignore_case=True))
 async def group_bot_not_hello(message: types.Message):
     username = message.from_user.username
     text = f'Дорогой <a href=\"https://t.me/@{username}\">{username}</a>, ' \
-           f'а прочти ка ты для начала <a href=\"https://neprivet.ru\">это</a>.\n' \
-           f'Потом поговорим...'
+           f'а прочти ка ты для начала <a href=\"https://neprivet.ru\">непривет</a> и ' \
+           f'<a href=\"https://nometa.xyz\">nometa</a>, а ' \
+           f'потом поговорим...'
 
     await message.reply(
         text=text,
