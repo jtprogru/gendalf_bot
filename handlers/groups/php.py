@@ -12,6 +12,8 @@ async def group_bot_php(message: types.Message):
         text = [
             f'Тут <a href=\"https://t.me/@{username}\">{username}</a> хочет получить трындюлей за ПеХаПе\n',
             f'Кто говорит про ПеХаПе, тот Филип Киркоров!',
+            f'Я не люблю пехапе и тебе не советую!',
+            f'Ну не надо тут пазязя...',
         ]
 
         await message.reply(
