@@ -1,9 +1,9 @@
 FROM python:3.8-slim-buster
 
-WORKDIR /botname
+WORKDIR /bot
 
-COPY requirements.txt /botname/
-RUN pip install -r /botname/requirements.txt
-COPY . /botname/
+COPY requirements.txt /bot/
+RUN pip install -r /bot/requirements.txt
+COPY . /bot/
 
-CMD python3 /botname/app.py
+CMD python3 /bot/app.py
