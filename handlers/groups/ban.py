@@ -47,9 +47,9 @@ async def user_bot_unban(message: types.Message):
                 can_send_other_messages=True,
             ),
         )
-
-        await message.bot.send_message(
-            chat_id=ADMIN_ID,
-            text='\n'.join(text),
-            parse_mode=types.ParseMode.HTML
-        )
+        for ADMIN_ID in ADMIN_LIST:
+            await message.bot.send_message(
+                chat_id=ADMIN_ID,
+                text='\n'.join(text),
+                parse_mode=types.ParseMode.HTML
+            )
