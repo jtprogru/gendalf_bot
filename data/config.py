@@ -14,6 +14,7 @@ ip = os.getenv("REDIS_IP")
 UNSPLASH_API_KEY = os.getenv("UNSPLASH_API_KEY")
 TMP_DIR = os.getenv("TMP_PATH")
 IMG_DIR = os.getenv("IMG_PATH")
+SENTRY_DSN = os.getenv("SENTRY_DSN")
 
 aiogram_redis = {
     'host': ip,
