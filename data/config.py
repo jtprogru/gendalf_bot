@@ -17,10 +17,10 @@ IMG_DIR = os.getenv("IMG_PATH")
 SENTRY_DSN = os.getenv("SENTRY_DSN")
 
 aiogram_redis = {
-    'host': ip,
+    "host": ip,
 }
 
 redis = {
-    'address': (ip, 6379),
-    'encoding': 'utf8'
+    "address": (ip, 6379),
+    "encoding": "utf8"
 }
