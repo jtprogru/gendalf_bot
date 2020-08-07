@@ -3,4 +3,5 @@ version: '3.7'
 services:
   bot:
     image: jtprog/gendalf_bot:latest
-    
+    volumes:
+      - ./.env:/bot/.env
