@@ -14,12 +14,13 @@ ip = os.getenv("REDIS_IP")
 UNSPLASH_API_KEY = os.getenv("UNSPLASH_API_KEY")
 TMP_DIR = os.getenv("TMP_PATH")
 IMG_DIR = os.getenv("IMG_PATH")
+SENTRY_DSN = os.getenv("SENTRY_DSN")
 
 aiogram_redis = {
-    'host': ip,
+    "host": ip,
 }
 
 redis = {
-    'address': (ip, 6379),
-    'encoding': 'utf8'
+    "address": (ip, 6379),
+    "encoding": "utf8"
 }
